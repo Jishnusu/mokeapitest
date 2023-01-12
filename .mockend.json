@@ -1,5 +1,5 @@
 {
-	"msg": {
+	"Msg": {
 		"BOT/intro": {
 			"id": "BOT/intro",
 			"message": "Hello Please select your order!",

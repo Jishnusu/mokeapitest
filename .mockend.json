@@ -1,47 +1,11 @@
 {
-	"Msg": {
-		"Msgzx": {
-			"id": "BOT/intro",
-			"message": "Hello Please select your order!",
-			"trigger": "CHOICES/intro"
-		},
-		"Msgfd": {
-			"id": "CHOICES/intro",
-			"options": [{
-					"label": "Burger!",
-					"trigger": "BOT/burger"
-				},
-				{
-					"label": "Pizza!",
-					"trigger": "BOT/pizza"
-				}
-			]
-		},
-		"Msfg": {
-			"id": "BOT/pizza",
-			"message": "Which Type of pizza you want !!!",
-			"trigger": "BOT/pizzaoptions"
-		},
-		"Msge": {
-			"id": "BOT/burger",
-			"message": "Which Type of burger you want !!!",
-			"trigger": "BOT/burgeroptions"
-		},
-		"Msgr": {
-			"id": "BOT/burgeroptions",
-			"options": [{
-					"label": "Chicken",
-					"trigger": "BOT/chicken"
-				},
-				{
-					"label": "Veg",
-					"trigger": "BOT/veg"
-				},
-				{
-					"label": "Beef",
-					"trigger": "BOT/beef"
-				}
-			]
-		}
-	}
+  "Post": {
+    "_": { "items": 20 },
+    "title": { "string": {} },
+    "comments": { "hasMany": "Comment" }
+  },
+  "Comment": {
+    "body": { "string": {} },
+    "post": { "belongsTo": "Post" }
+  }
 }

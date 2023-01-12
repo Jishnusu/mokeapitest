@@ -1,4 +1,4 @@
-export const script = [
+{
   {
     id: "BOT/intro",
     message: "Hello Please select your order!",
@@ -86,4 +86,4 @@ export const script = [
     //trigger: "BOT/introduce-self"
   },
  
-];
+}
